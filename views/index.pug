@@ -1,0 +1,108 @@
+doctype html 
+html 
+    head
+        
+        title Dance Academy
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&display=swap" rel="stylesheet")
+        style 
+            include ../static/style.css
+    body 
+    div#main
+       nav#navbar 
+            div#logo 
+                img(src="static/images/9f64fbaa-logo-1.png", alt="")
+            ul(style="list-style-type:none")
+                li #[a(href="/") Studio]
+                li #[a(href="/") Classes]
+                li #[a(href="/") Contact Us]   
+            button Sign Up
+       section#introSection 
+        div#leftbox
+            div.elem
+                h1 Best               
+            div.elem
+                h1 DANCE
+            div.elem
+                h1 Studio
+            img(src="static/images/e1a18738-arrow-1-1.png", alt="")
+            button Watch Tutorials
+        div#rightbox
+            div 
+                img(src="static/images/3a9de5b1-main-image.png", alt="")
+       section#sponserSection   
+            div.box.box1
+                img(src="static/images/2a65f1a9-image-3.jpg", alt="").dance_pic#dance_pic1
+                div 
+                    p Feb 21,2024
+                    h4 Basic Dance Steps for Everyone
+                    img(src="static/images/youtube-logo-24.png", alt="").yt_logo
+                    span  6,270,832 views
+            div.box.box2
+                img(src="static/images/ecf263f6-image-4.jpg", alt="").dance_pic#dance_pic2
+                div
+                    p Mar 3,2024 
+                    h4 3 Simple Dance Moves for Beginners
+                    img(src="static/images/youtube-logo-24.png", alt="").yt_logo
+                    span 6,270,832 views
+       section#movingSection 
+        div#rightSection 
+            div.heading
+                h1 Get Moving With Us
+            div.images
+                img(src="static/images/8ce2eb39-icon-1.png", alt="" id="img1").icon
+            div.danceBox#danceBox1
+                h2 Join Our Class
+                p Learn from the best dance choreographers. Sign up for our dance lessons today.
+           
+            div.images 
+                img(src="static/images/b7b37aac-icon-2.png", alt="" id="img2").icon   
+                img(src="static/images/321e49f7-arrow-2-1.png", alt="" id="arrow1").arrowImage     
+            div.danceBox#danceBox2
+                h2 Dance Choreography
+                p Follow our dance choreography videos to learn different dance styles.
+            div.images
+                img(src="static/images/4cd7f27c-icon-3.png", alt="" id="img3").icon
+                img(src="static/images/321e49f7-arrow-2-1.png", alt="" id="arrow2").arrowImage        
+            div.danceBox#danceBox3
+                h2 Perform Onstage
+                p Perform onstage at our annual dance festival and get a chance to garner worldwide recognition.
+        div#leftSection
+            img(src="static/images/ff757cdc-main-image-2.png", alt="")
+       section#cardSection 
+        h1 Dance Festival 2024
+        div.container
+            div.cards#card1
+                img(src="static/images/64af257b-image-7.jpg", alt="" id="dance_image1").dance_image
+                h2.text Contemporary Dance Festival
+                div
+                    <box-icon name='map' type='solid' color='#676767' class="map_icon" ></box-icon>
+                    p.text Bengluru, India state
+            div.cards#card2
+                img(src="static/images/49a59421-image-8.jpg", alt="" id="dance_image2").dance_image
+                h2.text Contemporary Dance Festival
+                div 
+                    <box-icon name='map' type='solid' color='#676767' class="map_icon" ></box-icon>
+                    p.text Bengluru, India state 
+            div.cards#card3
+                img(src="static/images/2b2d59f9-image-9.jpg", alt="" id="dance_image3").dance_image
+                h2.text Contemporary Dance Festival
+                div 
+                    <box-icon name='map' type='solid' color='#676767' class="map_icon" ></box-icon>
+                    p.text  Bengluru, India state
+       footer#footer 
+        | Copyright © 2024 DanceAcademy.com | All rights reserved
+       script.
+        var box1=document.querySelector('.box1');
+        var box2=document.querySelector('.box2');
+        function handleScrollEvent(){
+            if(window.scrollY > 500) {
+                box1.classList.add('scrolled');
+                box2.classList.add("scrolled");
+            }
+        }
+        window.addEventListener("scroll",handleScrollEvent);
+       script(src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js")
+  
+    include ../static/index.js
+
+    

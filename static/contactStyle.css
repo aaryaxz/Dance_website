@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h2{
+    text-align: center;
+    color: #202536;
+    font-size: 30px;
+}
+.myForm{
+    /* border: 1px solid red; */
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.child{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+    background-color: rgb(212, 219, 224);
+    font-size: 17px;
+}
+#myTextarea{
+    height: 150px;
+    padding-top: 10px;
+}#submitBtn{
+    width: 200px;
+    border: 1px solid black;
+    cursor: pointer;
+    background: linear-gradient(90deg, #F6F6FF 0%, #E8F9FF 100%);
+    transition:0.2s;
+}#submitBtn:hover{
+    background: #202536;
+    color: white;
+}
